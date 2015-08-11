@@ -1,4 +1,16 @@
 #!/usr/bin/env node
+if (process.argv.length < 3 || process.argv.length > 4) {
+  die('package.json to RDF\n' +
+      'converts npm package.json ' +
+      'to JSON-LD/RDF.\n\n' +
+      'usage: ./package-to-rdf [path to your package.josn file]');
+}
+/* Halt execution with an error message. */
+function die(message) {
+  console.log(message);
+  process.exit(1);
+}
+
 var readJson = require('read-package-json');
 var jsonld = require('jsonld');
 
@@ -8,7 +20,7 @@ var context = {
 };
 
 
-readJson('./package.json', console.error, false, function (er, data) {
+readJson(process.argv[2], console.error, false, function (er, data) {
   if (er) {
     console.error("There was an error reading the file")
     return
