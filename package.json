@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ali1k/ld-r-metadata-generator#readme",
   "dependencies": {
+    "jsonld": "^0.3.24",
     "read-package-json": "^2.0.0"
   }
 }
