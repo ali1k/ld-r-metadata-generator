@@ -12,6 +12,7 @@ readJson('./package.json', console.error, false, function (er, data) {
     console.error("There was an error reading the file")
     return
   }
+  //console.log(data);
   var doc = [
      {
         "@id": data.homepage,
@@ -20,11 +21,13 @@ readJson('./package.json', console.error, false, function (er, data) {
         "http://schema.org/about": data.description,
         "http://schema.org/url": data.homepage,
         "http://schema.org/softwareVersion": data.version,
-        "http://schema.org/author": data.author.url
+        "http://schema.org/author": data.author.url,
+        "http://schema.org/keywords": data.keywords,
+        "http://schema.org/license": data.license
     },
     {
     "@id": data.author.url,
-    "http://schema.org/name": data.author.name,   
+    "http://schema.org/name": data.author.name,
     "http://schema.org/email": data.author.email
     }
 ];
@@ -34,6 +37,6 @@ readJson('./package.json', console.error, false, function (er, data) {
   // serialize a document to N-Quads (RDF)
   jsonld.toRDF(doc, {format: 'application/nquads'}, function(err, nquads) {
     // nquads is a string of nquads
-    console.log(nquads);
+    //console.log(nquads);
   });
 });
