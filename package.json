@@ -2,7 +2,7 @@
   "name": "ld-r-metadata-generator",
   "version": "1.0.0",
   "description": "Metadata generator for LD-R components",
-  "main": "index.js",
+  "main": "./package-to-rdf",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

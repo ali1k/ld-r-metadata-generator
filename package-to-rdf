@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var readJson = require('read-package-json');
 var jsonld = require('jsonld');
 
