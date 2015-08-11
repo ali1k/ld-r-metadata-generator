@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/ali1k/ld-r-metadata-generator/issues"
   },
-  "homepage": "https://github.com/ali1k/ld-r-metadata-generator#readme",
+  "homepage": "https://github.com/ali1k/ld-r-metadata-generator",
   "dependencies": {
     "jsonld": "^0.3.24",
     "read-package-json": "^2.0.0"
