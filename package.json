@@ -1,0 +1,27 @@
+{
+  "name": "ld-r-metadata-generator",
+  "version": "1.0.0",
+  "description": "Metadata generator for LD-R components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali1k/ld-r-metadata-generator.git"
+  },
+  "keywords": [
+    "metadata",
+    "ld-r",
+    "linkedData"
+  ],
+  "author": "Ali Khalili <hyperir@gmail.com> (http://ali1k.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ali1k/ld-r-metadata-generator/issues"
+  },
+  "homepage": "https://github.com/ali1k/ld-r-metadata-generator#readme",
+  "dependencies": {
+    "read-package-json": "^2.0.0"
+  }
+}
